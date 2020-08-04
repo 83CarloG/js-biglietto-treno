@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:  url(../img/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+.main__text {
+  min-height: 20%;
+  min-width: 30%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+.main__data {
+  font-size: 18px;
+  margin: 10px;
+}
+.main__data--text-center, .main__title--text-center  {
+  text-align: center;
+}
