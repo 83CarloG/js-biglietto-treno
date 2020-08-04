@@ -19,7 +19,7 @@ if (!(age.isNan) && (!travel.isNaN) && (age > 0) && (travel > 0)) {
         ticket = ticket;
       }
 
-        alert("il prezzo del biglietto è " + Math.round(ticket * 100) / 100) + "€";
+        alert("The ticket price is " + Math.round(ticket * 100) / 100) + "€";
 }
 else {
   alert("Error, age and travel must be positive numbers. Retry to insert age and travel")
