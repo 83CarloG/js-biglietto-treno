@@ -1,13 +1,13 @@
 // Variables declaratiion (input)
 
-var age = prompt("How old are you?");
-var travel = prompt("How many km do you want to travel?");
+var age = parseInt(prompt("How old are you?"));
+var travel = parseInt(prompt("How many km do you want to travel?"));
 var priceKm = 0.21;
 var ticket;
 
 // Algorithm to resolve problem + output
 
-if (!(age.isNan) && (!travel.isNaN) && (age > 0) && (travel > 0)) {
+if (!(isNaN(age)) && !(isNaN(travel)) && (age >= 0) && (travel > 0)) {
   var ticket = travel * priceKm;
     if (age < 18) {
       ticket = ticket * 0.80;
@@ -25,6 +25,5 @@ if (!(age.isNan) && (!travel.isNaN) && (age > 0) && (travel > 0)) {
     document.getElementsByClassName('ticket')[0].innerHTML = ticket
 }
 else {
-  setTimeout(()=>alert("Error: age and travel must be positive numbers. Retry to insert age and travel"), 100)
+  alert("Error: age and travel must be positive numbers. Retry to insert age and travel")
 }
-;
